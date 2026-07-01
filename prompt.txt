@@ -1,0 +1,47 @@
+Create a clean, modern, responsive static website for a company named Fabrink.
+
+Fabrink is a trade show and large-format printing company specializing in exhibit graphics, fabric printing, SEG graphics, banners, flags, table covers, tents, backdrops, display stands, and custom large-format printing.
+
+The website should be a corporate showcase website, not an e-commerce website. It does not need shopping cart, online payment, customer login, or complex backend functions. The main goal is to present the company, services, product categories, project examples, and contact information.
+
+Use a clean, bright, professional visual style with a white background, light grey sections, and subtle blue accents. The website should look suitable for the trade show, exhibition, and commercial printing industry. Do not make it look like a fashion brand, textile dyeing company, or luxury dark-style website. You may use thin geometric lines as part of design for separating sections, and use sans serif fonts. 
+
+
+Use the company name exactly as “Fabrink”. Use the logo under the folder "Image", file name is "Fabrink_logo.png". Use a clear slogan such as “Exhibit Graphics & Large-Format Printing Solutions”.
+
+Create the following sections:
+1. Hero section with slogan, short description, and call-to-action buttons
+2. About Fabrink
+3. Services
+4. Product categories
+5. Gallery / portfolio placeholder
+6. Contact section
+8. Footer
+
+Product categories should include:
+- SEG fabric graphics
+- Trade show booth graphics
+- Banners
+- Flags
+- Table covers
+- Tents
+- Easel boards
+- Posters
+- Backdrops
+- Display stands
+- Window graphics
+- Custom large-format printing
+
+The website should include:
+- responsive design for desktop, tablet, and mobile
+- sticky or clear navigation bar
+- anchor links to page sections, do not need multiple pages but use anchor for each section
+- product category cards
+- image placeholders
+- contact form layout
+- SEO-friendly headings
+- fast-loading structure
+
+Use pure HTML and CSS. JavaScript should only be used if necessary. The final result should be suitable for deployment on Cloudflare Pages as a static website.
+
+Write all website text in professional, simple English. Avoid vague slogans. Make the website easy to understand for business clients, event companies, exhibitors, and print buyers.
