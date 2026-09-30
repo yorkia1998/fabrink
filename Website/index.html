@@ -6,7 +6,7 @@
   <meta name="description" content="Fabrink provides exhibit graphics, SEG fabric printing, banners, flags, table covers, tents, backdrops, display stands, and custom large-format printing for business clients.">
   <link rel="icon" type="image/png" href="Image/logo/logo_white.png">
   <link rel="apple-touch-icon" href="Image/logo/logo_white.png">
-  <title>Fabrink | Exhibit Graphics & Large-Format Printing Solutions</title>
+  <title>Fabrink | Your Exhibition Printing Partner</title>
   <style>
     :root {
       --blue: #1769aa;
@@ -55,20 +55,20 @@
       width: 100%;
       z-index: 10;
       border-bottom: 1px solid rgba(221, 229, 238, 0.75);
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.9);
       transition: transform 0.32s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
     .site-header.is-scrolled {
       border-bottom-color: rgba(221, 229, 238, 0.75);
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.9);
       box-shadow: 0 12px 35px rgba(18, 42, 66, 0.08);
       animation: navSlideDown 1.15s cubic-bezier(0.16, 1, 0.3, 1) both;
     }
 
     .site-header.nav-open {
       border-bottom-color: rgba(221, 229, 238, 0.75);
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.9);
       transform: translateY(0);
     }
 
@@ -341,9 +341,16 @@
     .about-grid,
     .contact-grid {
       display: grid;
-      grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.65fr);
       gap: 32px;
       align-items: start;
+    }
+
+    .about-grid {
+      grid-template-columns: minmax(0, 0.8fr) minmax(460px, 0.9fr);
+    }
+
+    .contact-grid {
+      grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.65fr);
     }
 
     .about-card,
@@ -353,6 +360,15 @@
       border-radius: var(--radius);
       padding: 30px;
       background: var(--white);
+    }
+
+    .about-card {
+      border: 0;
+      padding-top: 0;
+    }
+
+    .about-card .about-list {
+      margin-top: 0;
     }
 
     .about-list {
@@ -369,6 +385,7 @@
 
     .metric strong {
       display: block;
+      white-space: nowrap;
       font-size: 1.4rem;
       color: var(--blue-dark);
     }
@@ -379,7 +396,23 @@
     }
 
     .services-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .services-grid .card {
+      position: relative;
+    }
+
+    .services-grid .card:not(:last-child)::after {
+      position: absolute;
+      top: 50%;
+      right: -16px;
+      width: 12px;
+      height: 12px;
+      border-top: 3px solid var(--blue);
+      border-right: 3px solid var(--blue);
+      content: "";
+      transform: translateY(-50%) rotate(45deg);
     }
 
     .cards-grid {
@@ -682,6 +715,10 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
+      .services-grid .card::after {
+        display: none;
+      }
+
       .cards-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
@@ -808,7 +845,6 @@
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#products">Products</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact Us</a>
       </div>
@@ -820,17 +856,17 @@
       <div class="container hero-layout">
         <div>
           <h1>Exhibit Graphics & Large-Format Printing Solutions</h1>
-          <p class="lead">We produce sharp, reliable print graphics for trade shows, exhibitions, events, retail spaces, and commercial display projects.</p>
+          <p class="lead">Fast, reliable printing for trade shows, exhibitions, and events.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Request a Quote</a>
+            <a class="button button-primary" href="#contact">Contact Us</a>
             <a class="button button-secondary" href="#products">View Products</a>
           </div>
         </div>
         <aside class="hero-panel" aria-label="Fabrink capabilities">
           <ul class="spec-list">
-            <li><strong>Exhibit ready</strong> Graphics built for booths, show floors, and branded environments.</li>
-            <li><strong>Fabric focused</strong> SEG, dye-sub fabric, table covers, flags, tents, and backdrops.</li>
-            <li><strong>Large-format capable</strong> Banners, boards, posters, window graphics, and custom prints.</li>
+            <li><strong>Made in the GTA</strong> Local production. Faster response.</li>
+            <li><strong>Fast Production</strong> Quick turnaround when timing matters.</li>
+            <li><strong>Show Ready</strong> Large-format fabric graphics for trade shows and events.</li>
           </ul>
         </aside>
       </div>
@@ -840,16 +876,16 @@
       <div class="container about-grid">
         <div>
           <p class="eyebrow">About Us</p>
-          <h2>Print production for business events and branded spaces.</h2>
-          <p class="lead">Fabrink helps exhibitors, event companies, agencies, and print buyers create polished display graphics with clear communication and practical production support.</p>
+          <h2>GTA-based exhibit and large-format printing.</h2>
+          <p class="lead">We provide trade show booth solutions, exhibit graphics, and custom large-format printing.</p>
         </div>
         <div class="about-card">
-          <p>From trade show booth graphics to custom large-format printing, our work is built around accuracy, clean finishing, and dependable presentation. We focus on materials and formats that help brands show up clearly in busy commercial environments.</p>
+          <!-- <p>From trade show booth graphics to custom large-format printing, our work is built around accuracy, clean finishing, and dependable presentation. We focus on materials and formats that help brands show up clearly in busy commercial environments.</p> -->
           <div class="about-list">
-            <div class="metric"><strong>SEG</strong>Silicone edge fabric graphics</div>
-            <div class="metric"><strong>Events</strong>Trade shows, exhibits, and displays</div>
-            <div class="metric"><strong>Indoor</strong>Booths, boards, posters, and stands</div>
-            <div class="metric"><strong>Outdoor</strong>Banners, flags, tents, and graphics</div>
+            <div class="metric"><strong>Backdrop & SEG</strong>Trade show backdrops and SEG graphics</div>
+            <div class="metric"><strong>Display Stands</strong>Roll-up and banner stands</div>
+            <div class="metric"><strong>Tables & Displays</strong>Promotional tables and display graphics</div>
+            <div class="metric"><strong>Flags & Tents</strong>Custom event flags and tents</div>
           </div>
         </div>
       </div>
@@ -866,22 +902,26 @@
         </div>
         <div class="grid services-grid">
           <article class="card">
-            <h3>Exhibit Graphic Production</h3>
-            <p>Booth graphics, panels, hanging banners, and branded visual systems for exhibitions and trade shows.</p>
+            <h3>Artwork Review</h3>
+            <p>Check files and print setup</p>
           </article>
           <article class="card">
-            <h3>Fabric Printing</h3>
-            <p>Fabric graphics for SEG frames, backdrops, table covers, flags, tents, and display environments.</p>
+            <h3>Confirm Details</h3>
+            <p>Size, material and finishing</p>
           </article>
           <article class="card">
-            <h3>Large-Format Printing</h3>
-            <p>Posters, boards, banners, window graphics, and custom printed materials for commercial spaces.</p>
+            <h3>Production</h3>
+            <p>Print, finish and quality check</p>
+          </article>
+          <article class="card">
+            <h3>Pickup / Delivery</h3>
+            <p>Ready for your event</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="products">
+    <!-- <section class="section" id="products">
       <div class="container">
         <div class="section-heading">
           <div>
@@ -941,7 +981,7 @@
           </article>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="section section-alt" id="gallery">
       <div class="container">
@@ -953,16 +993,16 @@
         </div>
         <div class="grid portfolio-grid">
           <figure class="portfolio-card"><img src="Image/project/backdrop_1.jpg" alt="Custom Display Backdrop" loading="lazy"><figcaption>Custom Display Backdrop</figcaption></figure>
-          <figure class="portfolio-card"><img src="Image/project/backdrop_3.jpg" alt="Trade show backdrop graphics" loading="lazy"><figcaption>Trade Show Backdrop Graphics</figcaption></figure>
+          <figure class="portfolio-card"><img src="Image/project/backdrop_3.jpg" alt="Tube frame backdrop graphics" loading="lazy"><figcaption>Tube Frame Backdrop Graphics</figcaption></figure>
           <figure class="portfolio-card"><img src="Image/project/backdrop_4.jpg" alt="Exhibit wall backdrop print" loading="lazy"><figcaption>Exhibit Wall Backdrop Print</figcaption></figure>
           <figure class="portfolio-card"><img src="Image/project/backdrop_5.jpg" alt="Pop-up Event Backdrop" loading="lazy"><figcaption>Pop-up Event Backdrop</figcaption></figure>
           <figure class="portfolio-card"><img src="Image/project/backdrop_6.jpg" alt="Event photo backdrop graphics" loading="lazy"><figcaption>Event Photo Backdrop Graphics</figcaption></figure>
           <figure class="portfolio-card"><img src="Image/project/backdrop_7.jpg" alt="Portable backdrop display" loading="lazy"><figcaption>Portable Backdrop Display</figcaption></figure>
           <figure class="portfolio-card"><img src="Image/project/backlitSEG_1.jpg" alt="Backlit SEG fabric graphic display" loading="lazy"><figcaption>Backlit SEG Fabric Graphic</figcaption></figure>
           <figure class="portfolio-card"><img src="Image/project/SEG_1.jpg" alt="SEG fabric graphics installation" loading="lazy"><figcaption>SEG Fabric Graphics</figcaption></figure>
-          <figure class="portfolio-card"><img src="Image/project/geniee_table.jpg" alt="Printed trade show table cover" loading="lazy"><figcaption>Printed Trade Show Table Cover</figcaption></figure>
+          <figure class="portfolio-card"><img src="Image/project/geniee_table.jpg" alt="Promotion tables" loading="lazy"><figcaption>Promotion tables</figcaption></figure>
           <figure class="portfolio-card"><img src="Image/project/tent_1.jpg" alt="Custom printed event tent" loading="lazy"><figcaption>Custom Printed Event Tent</figcaption></figure>
-          <figure class="portfolio-card"><img src="Image/project/flag_1.jpg" alt="Outdoor printed flag project" loading="lazy"><figcaption>Outdoor Printed Flag</figcaption></figure>
+          <figure class="portfolio-card"><img src="Image/project/flag_1.jpg" alt="Outdoor flag project" loading="lazy"><figcaption>Outdoor Flag</figcaption></figure>
           <figure class="portfolio-card"><img src="Image/project/pu_t1.jpg" alt="Custom printed display material" loading="lazy"><figcaption>Custom Printed Display Material</figcaption></figure>
         </div>
       </div>
@@ -989,7 +1029,6 @@
       <div class="footer-links">
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#products">Products</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact Us</a>
       </div>
